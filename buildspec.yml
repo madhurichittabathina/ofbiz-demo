@@ -34,7 +34,7 @@ artifacts:
    - 'scripts/start_server.sh'
    - 'scripts/stop_server.sh'
 commands:
-    - echo Nothing to do in the pre_build phase...
+   - echo Nothing to do in the pre_build phase...
   build:
     commands:
       - echo Build started on `date`
