@@ -20,13 +20,14 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - ./gradlew clean build
+      - gradle build
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   discard-paths: yes
   files:
+   - 'build/libs/*.jar'
    - 'appspec.yml'
    - 'scripts/before_install.sh'
    - 'scripts/after_install.sh'
@@ -45,4 +46,5 @@ artifacts:
 artifacts:
   discard-paths: yes
   files:
+   - 'build/libs/*.jar'
    
