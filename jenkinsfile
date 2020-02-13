@@ -12,6 +12,13 @@ pipeline {
                 gradlew('cleanAll', 'loadDefault')
             }
         }
+	 stage('Teams notificaton') {
+            steps {
+                TeamsSend channel: '#jenkins',
+                    color: 'good',
+                    message: "*${currentBuild.currentResult}:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}"
+      }
+    }
 	stage('Unit Tests') {
           steps {
                gradlew('test')
