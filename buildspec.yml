@@ -20,7 +20,6 @@ phases:
 artifacts:
   discard-paths: yes
   files:
- 
    - 'appspec.yml'
    - 'scripts/before_install.sh'
    - 'scripts/after_install.sh'
