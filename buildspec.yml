@@ -35,9 +35,9 @@ artifacts:
     commands:
       - echo Build completed on `date`
 artifacts:
-  discard-paths: yes
+  type: zip
   files:
-  
+    - 'build/libs/*.jar'
  
   
    
