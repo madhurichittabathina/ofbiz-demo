@@ -6,7 +6,7 @@ phases:
       java: corretto8 
     commands:
       - echo Nothing to do in the install phase...
-  pre_build:version: 0.2
+  
 
 phases:
   install:
