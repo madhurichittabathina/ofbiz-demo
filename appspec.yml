@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: Amazon S3/codepipeline-us-east-2-5180930414/ofbiz-demo/BuildArtif/uFCMvu5
+  - source: /
     destination: /usr/share/tomcat/webapps/
 hooks:
   BeforeInstall:
