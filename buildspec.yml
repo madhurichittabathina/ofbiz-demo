@@ -21,11 +21,11 @@ phases:
 artifacts:
   discard-paths: yes
   files:
-   - '*/appspec.yml'
-   - '*/scripts/before_install.sh'
-   - '*/scripts/after_install.sh'
-   - '*/scripts/start_server.sh'
-   - '*/scripts/stop_server.sh'
+   - 'appspec.yml'
+   - 'scripts/before_install.sh'
+   - 'scripts/after_install.sh'
+   - 'scripts/start_server.sh'
+   - 'scripts/stop_server.sh'
 
   build:
     commands:
