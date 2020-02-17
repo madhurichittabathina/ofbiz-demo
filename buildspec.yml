@@ -6,7 +6,6 @@ phases:
       java: corretto8 
     commands:
       - echo Nothing to do in the install phase...
-
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
@@ -19,25 +18,11 @@ phases:
     commands:
       - echo Build completed on `date`
 artifacts:
-  discard-paths: yes
-  files:
-   - 'appspec.yml'
-   - 'before_install.sh'
-   - 'after_install.sh'
-   - 'start_server.sh'
-   - 'stop_server.sh'
-
-  build:
-    commands:
-      - echo Build started on `date`
-      - gradle build
-  post_build:
-    commands:
-      - echo Build completed on `date`
-artifacts:
   type: zip
   files:
     - 'build/libs/*.jar'
- 
-  
-   
+    - 'appspec.yml'
+    - 'scripts/before_install.sh'
+    - 'scripts/after_install.sh'
+    - 'scripts/start_server.sh'
+    - 'scripts/stop_server.sh'
