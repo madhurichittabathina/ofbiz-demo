@@ -20,7 +20,7 @@ phases:
 artifacts:
   type: zip
   files:
-    - 'target/build/libs/*.jar'
+    - 'build/libs/*.jar'
     - 'appspec.yml'
     - 'scripts/before_install.sh'
     - 'scripts/after_install.sh'
