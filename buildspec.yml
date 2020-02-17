@@ -22,10 +22,10 @@ artifacts:
   discard-paths: yes
   files:
    - 'appspec.yml'
-   - 'scripts/before_install.sh'
-   - 'scripts/after_install.sh'
-   - 'scripts/start_server.sh'
-   - 'scripts/stop_server.sh'
+   - 'before_install.sh'
+   - 'after_install.sh'
+   - 'start_server.sh'
+   - 'stop_server.sh'
 
   build:
     commands:
