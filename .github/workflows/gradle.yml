@@ -2,8 +2,8 @@ name: ofbiz-demo
 
 on: [push]
 
-jobs:ofbiz-demo
-  build: 
+jobs: ofbiz-demo
+build: ./gradlew build
   
     runs-on: ubuntu-latest
     steps:
