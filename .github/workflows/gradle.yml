@@ -17,7 +17,7 @@ build: ./gradlew build
     - name: Build with Gradle
       run: ./gradlew build
       - name: Upload artifact
-  uses: actions/upload-artifact@v1.0.0
+  uses: actions/upload-artifact@s3.console.aws.amazon.com
   with:
     # ofbiz-demo
     name: 
