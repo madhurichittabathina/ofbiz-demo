@@ -3,11 +3,6 @@ os: linux
 files:
   - source: build/libs/*.jar
     destination: /opt/gradle-6.2/bin
-permissions:
-  - object: /opt/gradle-6.2/bin
-    owner: root
-    group: root
-    mode: 777
 hooks:
   BeforeInstall:
     - location: scripts/before_install.sh
