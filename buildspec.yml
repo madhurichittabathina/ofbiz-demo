@@ -4,7 +4,6 @@ phases:
   install:
     runtime-versions:
       java: openjdk8
-      unzip
   pre_build:
     commands:
       - wget -P /opt https://services.gradle.org/distributions/gradle-6.2-all.zip
