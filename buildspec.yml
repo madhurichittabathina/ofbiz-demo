@@ -3,17 +3,16 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: corretto8 
-    commands:
-      - echo Nothing to do in the install phase...
+      java: openjdk8
+      unzip
   pre_build:
     commands:
-      - echo Nothing to do in the pre_build phase...
+      - wget -P /opt https://services.gradle.org/distributions/gradle-6.2-all.zip
+	    - sh /opt/gradle-6.2/bin/gradle wrapper
+	    - sh /opt/gradle-6.2/bin/gradlew cleanAll loadDefault
   build:
     commands:
       - echo Build started on `date`
-      - gradle build
-      - gradle --status
   post_build:
     commands:
       - echo Build completed on `date`
@@ -26,4 +25,3 @@ artifacts:
     - 'scripts/after_install.sh'
     - 'scripts/start_server.sh'
     - 'scripts/stop_server.sh'
-    
