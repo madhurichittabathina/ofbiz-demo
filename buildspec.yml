@@ -7,8 +7,8 @@ phases:
   pre_build:
     commands:
       - wget -P /opt https://services.gradle.org/distributions/gradle-6.2-all.zip
-      - sh /opt/gradle-6.2/bin/gradle wrapper
-      - sh /opt/gradle-6.2/bin/gradlew cleanAll loadDefault
+      - cd /opt
+      - unzip gradle-6.2-all.zip
   build:
     commands:
       - echo Build started on `date`
