@@ -9,7 +9,7 @@ phases:
       - wget -P /opt https://services.gradle.org/distributions/gradle-6.2-all.zip
       - mkdir /opt/gradle
       - cd /opt/gradle
-      - unzip -d /opt/gradle/gradle-6.2-all.zip
+      - unzip gradle-6.2-all.zip
       - ls /opt/gradle/gradle-6.2
       - export PATH=$PATH:/opt/gradle/gradle-6.2/bin
   build:
