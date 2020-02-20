@@ -13,7 +13,7 @@ phases:
     commands:
       - echo Build started on `date`
       - cd /opt/gradle-6.2/bin
-      - gradlew build
+      - gradle build
   post_build:
     commands:
       - echo Build completed on `date`
