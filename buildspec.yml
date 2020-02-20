@@ -4,6 +4,8 @@ phases:
   install:
     runtime-versions:
       java: corretto8
+  commands:
+      - echo Nothing to do in the install phase...
   pre_build:
     commands:
       - wget -P /opt https://services.gradle.org/distributions/gradle-6.2-all.zip
