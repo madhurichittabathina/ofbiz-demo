@@ -6,10 +6,7 @@ phases:
       java: corretto8
   pre_build:
     commands:
-      - wget -P /opt https://services.gradle.org/distributions/gradle-6.2-all.zip
-      - cd /opt
-      - unzip gradle-6.2-all.zip
-      - export PATH=$PATH:/opt/gradle-6.2/bin
+      - echo Nothing to do in the pre_build phase...
   build:
     commands:
       - echo Build started on `date`
