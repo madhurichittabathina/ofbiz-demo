@@ -17,8 +17,6 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - echo "checking libs folder"
-      - ls build/libs/
 artifacts:
   type: zip
   files:
