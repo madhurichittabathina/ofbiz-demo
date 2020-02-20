@@ -13,8 +13,8 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - gradle build
-      - gradle --status
+      - gradlew build
+      - gradlew --status
   post_build:
     commands:
       - echo Build completed on `date`
