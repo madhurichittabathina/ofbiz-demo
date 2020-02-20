@@ -7,15 +7,13 @@ phases:
   pre_build:
     commands:
       - wget -P /opt https://services.gradle.org/distributions/gradle-6.2-all.zip
-      - mkdir /opt/gradle
-      - cd /opt/gradle
+      - cd /opt
       - unzip gradle-6.2-all.zip
-      - ls /opt/gradle/gradle-6.2
-      - export PATH=$PATH:/opt/gradle/gradle-6.2/bin
+      - export PATH=$PATH:/opt/gradle-6.2/bin
   build:
     commands:
       - echo Build started on `date`
-      - cd /opt/gradle/gradle-6.2/bin
+      - cd /opt/gradle-6.2/bin
       - gradle build
   post_build:
     commands:
