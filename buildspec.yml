@@ -20,7 +20,7 @@ phases:
 artifacts:
   type: zip
   files:
-    - 'opt/gradle-6.2/bin/build/libs/*.jar'
+    - 'build/libs/*.jar'
     - 'appspec.yml'
     - 'scripts/before_install.sh'
     - 'scripts/after_install.sh'
