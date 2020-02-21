@@ -1,2 +1,3 @@
 #!/bin/bash
-sudo sh /opt/gradle-6.2/gradlew /ofbiz.jar
+sudo cd /opt/gradle-6.2
+sudo sh ./gradlew ofbiz.jar
