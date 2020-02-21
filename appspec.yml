@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: build/libs/*.jar
+  - source: build/libs/ofbiz.jar
     destination: /opt/gradle-6.2
 hooks:
   BeforeInstall:
