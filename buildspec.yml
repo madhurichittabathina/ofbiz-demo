@@ -24,3 +24,4 @@ artifacts:
     - 'scripts/start_server.sh'
     - 'scripts/stop_server.sh'
     
+
