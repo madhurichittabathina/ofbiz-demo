@@ -1,3 +1,6 @@
 #!/bin/bash
-sudo cd /opt/gradle-6.2
-sudo sh ./gradlew ofbiz.jar
+sudo cd /opt
+sudo git clone https://github.com/darshankare/ofbiz-demo.git
+sudo cd ofbiz-demo/
+./gradlew cleanAll loadDefault
+./gradlew ofbiz
