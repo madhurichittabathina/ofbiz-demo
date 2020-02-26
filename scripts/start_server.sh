@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo ./gradlew ofbiz
+sudo gradlew ofbiz
