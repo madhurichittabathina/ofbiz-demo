@@ -1,10 +1,9 @@
 name: ofbiz-demo
 
 on: [push]
-
-jobs: ofbiz-demo
-build:
-    name: 
+jobs: 
+  build:
+    name: ofbiz-demo
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
