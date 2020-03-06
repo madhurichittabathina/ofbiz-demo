@@ -309,6 +309,18 @@ buildscript {
             classpath 'org.owasp:dependency-check-gradle:1.4.0'
         }
     }
+repositories {        
+            mavenCentral()  
+
+        }
+apply plugin: 'org.akhikhl.gretty'
+
+     gretty {
+        httpPort = 80
+
+        contextPath = '/'
+        jvmArgs = ['-Xmx1024M', '-XX:PermSize=128M', '-XX:MaxPermSize=256M']
+      //  servletContainer = 'jetty7'
 }
 if (project.hasProperty('enableOwasp')) {
     apply plugin: 'org.owasp.dependencycheck'
