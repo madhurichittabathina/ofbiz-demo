@@ -14,11 +14,11 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Build with Gradle
-        run: ./gradlew build
-      - name: Upload artifact
-        uses: actions/upload-artifact@s3.console.aws.amazon.com
-        with:
-          java-version: 1.8
+#         run: ./gradlew build
+#       - name: Upload artifact
+#         uses: actions/upload-artifact@s3.console.aws.amazon.com
+#         with:
+#           java-version: 1.8
         # ofbiz-demo
 #       - name: Defining path
 #         # Directory containing files to upload
