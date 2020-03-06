@@ -18,7 +18,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@s3.console.aws.amazon.com
         with:
+          java-version: 1.8
         # ofbiz-demo
-        name: 
-        # Directory containing files to upload
-        path: https://s3.console.aws.amazon.com/s3/buckets/madhu-sample/?region=ap-southeast-1&tab=overview
+#       - name: Defining path
+#         # Directory containing files to upload
+#         with: https://s3.console.aws.amazon.com/s3/buckets/madhu-sample/?region=ap-southeast-1&tab=overview
